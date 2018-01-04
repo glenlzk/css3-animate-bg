@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.Kanshan-container {
+		    position: fixed;
+		    z-index: 2;
+		    bottom: 50px;
+		    left: 0;
+		    width: 160px;
+		    height: 160px;
+		    cursor: pointer;
+		    overflow: hidden;
+		}
+
+		.Kanshan--dynamic {
+		    background-image: url('./kanshan_array.png');
+		    background-size: 10800px 200px;
+		    -webkit-animation: dynamic 2.4s steps(54) infinite;
+		    animation: dynamic 2.4s steps(54) infinite;
+		}
+
+		@-webkit-keyframes dynamic {
+	    0% {
+	        background-position: 0 0
+	    }
+
+	    to {
+	        background-position: -10800px 0
+	    }
+	}
+
+	@keyframes dynamic {
+	    0% {
+	        background-position: 0 0
+	    }
+
+	    to {
+	        background-position: -10800px 0
+	    }
+	}
+
+		.Kanshan-container div {
+		    position: relative;
+		    bottom: 15px;
+		    right: 20px;
+		    width: 200px;
+		    height: 200px;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="Kanshan-container"><div class="Kanshan--dynamic"></div></div>
+</body>
+</html>
